@@ -18,3 +18,4 @@ print nc2
 print nc3.groups
 
 print "new job is done."
+print 'new test.'
