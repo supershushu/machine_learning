@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 from netCDF4 import Dataset
+import keras as ks
 
 path = '/home/jinma/dms_data/satellite'
 file1 = 'A2002194.L3b_DAY_RRS.nc'
@@ -16,3 +17,4 @@ print nc1
 print nc2
 print nc3.groups
 
+print "new job is done."
