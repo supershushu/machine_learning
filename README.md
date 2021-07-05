@@ -1,2 +1,3 @@
-# machine_learning
-# this is a test project
+# Machine learning Project
+# This is a test project
+# Date: July, 2021
