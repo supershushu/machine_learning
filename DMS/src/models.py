@@ -3,14 +3,14 @@
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin, RegressorMixin, clone
 
+
 class AveragingModels(BaseEstimator, RegressorMixin, TransformerMixin):
     def __init__(self, models):
+        self.models_ = [clone(x) for x in self.models]
         self.models = models
 
     # we define clones of the original models to fit the data in
     def fit(self, X, y):
-        self.models_ = [clone(x) for x in self.models]
-
         # Train cloned base models
         for model in self.models_:
             model.fit(X, y)
@@ -22,4 +22,3 @@ class AveragingModels(BaseEstimator, RegressorMixin, TransformerMixin):
             model.predict(X) for model in self.models_
         ])
         return np.mean(predictions, axis=1)
-

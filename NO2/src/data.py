@@ -6,7 +6,6 @@ import pandas as pd
 def process_no2():
     pass
 
-
 def process_vis():
     pass
 
@@ -20,4 +19,4 @@ def write_data_csv():
     pass
 
 
-print '...'
+print("...")
