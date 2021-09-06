@@ -6,7 +6,7 @@ from model import Model
 
 
 def load_data():
-    path = '/Users/jinma/Data/NO2_MaJin'
+    path = 'predifined'
     files = os.listdir(path)
     print(files)
     file1 = 'A_MIXHI_HR_HKO_VT_223200_1141700-2002.csv'
